@@ -1,22 +1,21 @@
 # Data-Science-Project
-In this Project, i built a predictive model to predict learners' performance.
-Delivery Duration Prediction
+In this Project, i built a predictive model to predict Delivery Duration.
 
-This data project has been used as a take-home assignment in the recruitment process for the data science positions at DoorDash.
 
 Purpose
-When a consumer places an order on DoorDash, we show the expected time of delivery. It is very important for DoorDash to get this right, as it has a big impact on consumer experience. In this exercise, you will build a model to predict the estimated time taken for a delivery.
+When a consumer places an order on DoorDash, the expected time of delivery has to be shown, It is very important for DoorDash to get this right because it has a big impact on consumer experience.
 
-Concretely, for a given delivery you must predict the total delivery duration seconds , i.e., the time taken from
+For a given delivery l must predict the total delivery duration seconds , i.e., the time taken from
 Start: the time consumer submits the order (created_at) to
 End: when the order will be delivered to the consumer (actual_delivery_time)
 
 Data Description
-The attached file historical_data.csv contains a subset of deliveries received at DoorDash in early 2015 in a subset of the cities. Each row in this file corresponds to one unique delivery. We have added noise to the dataset to obfuscate certain business details. Each column corresponds to a feature as explained below. Note all money (dollar) values given in the data are in cents and all time duration values given are in seconds
+The csv dataset contains a subset of deliveries received at DoorDash in early 2015 in a subset of the cities. Each row in this file corresponds to one unique delivery and each column corresponds to a feature as explained below. 
+Note all money (dollar) values given in the data are in cents and all time duration values given are in seconds
 
 The target value to predict here is the total seconds value between created_at and actual_delivery_time.
 
-Columns in historical_data.csv
+Columns in the csv dataset
 Time features
 market_id: A city/region in which DoorDash operates, e.g., Los Angeles, given in the data as an id
 created_at: Timestamp in UTC when the order was submitted by the consumer to DoorDash. (Note this timestamp is in UTC, but in case you need it, the actual timezone of the region was US/Pacific)
